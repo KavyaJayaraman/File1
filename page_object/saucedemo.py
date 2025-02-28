@@ -18,6 +18,25 @@ def password():
         return "//android.widget.EditText[@content-desc='test-Password']"
 def login():
         return "//android.view.ViewGroup[@content-desc='test-LOGIN']"
+
+def list_pdt():
+        return "//android.view.ViewGroup[@content-desc='test-Toggle']/android.widget.ImageView"
+def pdt_filter():
+        return "//android.view.ViewGroup[@content-desc='test-Modal Selector Button']/android.view.ViewGroup/android.view.ViewGroup/android.widget.ImageView"
+def low_high():
+        return "new UiSelector().text(\"Price (low to high)\")"
+def first_item():
+        return "//android.widget.TextView[@content-desc='test-Price' and @text='$7.99']"
+def second_item():
+        return "//android.widget.TextView[@content-desc='test-Price' and @text='$9.99']"
+
+def high_low():
+        return "new UiSelector().text(\"Price (high to low)\")"
+def third_item():
+        return "//android.widget.TextView[@content-desc='test-Price' and @text='$49.99']"
+def fourth_item():
+        return "//android.widget.TextView[@content-desc='test-Price' and @text='$29.99']"
+
 def itemCount():
         return "//android.widget.TextView[@content-desc='test-Item title']"
 def printItem(i):
